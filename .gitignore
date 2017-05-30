@@ -2,5 +2,12 @@
 plots/*
 processed_data/*
 tmp/*
+
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pyg
 *.pdf
+
 !**/.gitkeep

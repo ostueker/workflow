@@ -1,0 +1,81 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{fullpage}
+% \usepackage{graphicx}
+% \usepackage{subfigure}
+\usepackage{svg}
+\usepackage{minted}
+\usepackage{float}
+
+\graphicspath{{./plots/}}
+\setsvg{svgpath=./plots/}
+
+\begin{document}
+\title{Building a Workflow to create Reports}
+\author{Oliver Stueker}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+This document is created by a make script.
+\end{abstract}
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+\begin{figure}[!ht]
+	\centering
+	% \includegraphics[width=0.8\columnwidth]{figure_1}
+	\includesvg[width=0.8\columnwidth]{figure_1}
+	\caption{The plotted example data.}
+\end{figure}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+
+\begin{figure}
+	\centering
+	\subfloat[Figure 2a]{
+		% \includegraphics[width=0.3\textwidth]{figure_2a}
+		\includesvg[width=0.3\textwidth]{figure_2a}
+		\label{fig:figure2a}
+	}
+	~
+	\subfloat[Figure 2b]{
+		% \includegraphics[width=0.3\textwidth]{figure_2b}
+		\includesvg[width=0.3\textwidth]{figure_2b}
+		\label{fig:figure2b}
+	}
+	~
+	\subfloat[Figure 2c]{
+		% \includegraphics[width=0.3\textwidth]{figure_2c}
+		\includesvg[width=0.3\textwidth]{figure_2c}
+		\label{fig:figure2c}
+	}
+	\caption{Figure 2}
+	\label{fig:figure2}
+\end{figure}
+
+\newpage
+\section{Appendix}
+\subsection{Listings}
+
+% \subsubsection{Makefile}
+% \inputminted[linenos,frame=single]{makefile}{Makefile}
+
+\subsubsection{generate\_data.py}
+\inputminted[linenos,frame=single]{python}{generate_data.py}
+
+\subsubsection{process\_data1.py}
+\inputminted[linenos,frame=single]{python}{process_data1.py}
+
+\subsubsection{make\_figure1.py}
+\inputminted[linenos,frame=single]{python}{make_figure1.py}
+
+\subsubsection{make\_figure2.py}
+\inputminted[linenos,frame=single]{python}{make_figure2.py}
+
+\subsubsection{report.tex}
+\inputminted[linenos,frame=single]{latex}{report.tex}
+\end{document}
+
