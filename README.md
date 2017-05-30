@@ -14,3 +14,5 @@ and assembling a report.
 	- `process_data1.py` - Calculates means and standard-deviation
 	- `make_figure1.py` - Creates barplot and histogram.
 	- `make_figure2.py` - Performs linear regression and creates scatterplot.
+
+* Third stage has a Makefile for smarter processing.
